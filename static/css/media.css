@@ -1,0 +1,42 @@
+/* Media Queries */
+@media (min-width: 1024px) {
+    .form-section {
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+        justify-content: flex-start; /* Alinea todo a la izquierda */
+    }
+
+    main {
+        max-width: 1200px; /* Ancho máximo del contenido */
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-section {
+        padding: 15px;
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: flex-start; /* Alinea elementos al inicio */
+    }
+
+    .grafica-section img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    .grafica-section h2 {
+        font-size: 1.2rem;
+    }
+}

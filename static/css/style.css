@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #E8EAEB;
+    color: #333;
+    display: flex; /* Divide el espacio entre el menú y el contenido */
+}
+
+/* Header (Lateral Menu) */
+header {
+    position: sticky; /* Convierte el menú en un elemento fijo */
+    top: 0;
+    left: 0;
+    width: 50px; /* Ancho fijo del menú */
+    height: 100vh; /* Largo completo de la pantalla */
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    flex-shrink: 0; /* Mantiene el tamaño fijo del menú */
+}
+
+.logo {
+    height: 100px;
+    padding: 16px;
+}
+.menu-lista {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.elemento-lista {
+    padding: 1rem;
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.logout{
+    margin-top: 200px;
+}
+
+.elemento-lista:hover {
+    background: blue;
+}
+
+
+/* Main Content */
+main {
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    margin-left: 50px; /* Ajusta el contenido para no superponerse con el menú */
+}
+
+/* Form Section */
+.form-section {
+    padding: 10px 20px;
+    margin: 0;
+    display: flex; /* Coloca los elementos en una línea horizontal */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 50%; /* Espaciado entre los elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado para el formulario */
+.form-section h2 {
+    margin: 0; /* Elimina márgenes extra */
+    margin-right: 45%; /* Da espacio entre el título y el filtro */
+    font-size: 1.5rem;
+    color: #333;
+    white-space: nowrap; /* Asegura que el título no se quiebre en líneas múltiples */
+}
+
+/* Label del filtro */
+.form-section label {
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 10px; /* Espaciado entre el label y el select */
+}
+
+/* Campo select */
+.form-section select {
+    padding: 10px;
+    width: 200px; /* Ajusta el tamaño del campo */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botón */
+.form-section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: #0073e6;
+    color: white;
+}
+
+.form-section button:hover {
+    background-color: #005bb5;
+}
+/* Card Section */
+.cards-title{
+    text-align: center;
+}
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Graph Section */
+.grafica-section {
+    text-align: center;
+}
+
+.grafica-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.grafica-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
